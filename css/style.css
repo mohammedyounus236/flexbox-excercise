@@ -4,3 +4,143 @@
 	padding:0;
 }
 
+body{
+	padding-top: 50px;
+	background-color: black;
+}
+
+h2{
+	text-align:center;
+}
+
+#about{
+	color:yellow;
+}
+
+.top-nav{
+	display: flex;
+	background: #000;
+	min-height:50px;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+}
+
+.top-nav a{
+	color: yellow;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.top-nav a:hover{
+	border-bottom: 3px solid #047dbf;
+}
+
+.brand-text{
+	font-size: 30px;
+	margin-left: 15px;
+}
+
+.top-nav-list{
+	display:flex;
+	list-style: none;
+	margin-left: auto;
+}
+
+.top-nav-list li{
+	margin: 0px 15px;
+}
+
+.top-nav-list a{
+	padding:5px;
+}
+
+.full-screen-bg{
+	color: black;
+	display:flex;
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-image: url("../images/batmancity.jpg");
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row{
+	display:flex;
+	flex-wrap: nowrap;
+}
+
+.col-4-2-1{
+    width:23%;
+    margin: 1%;
+    padding:10px;
+}
+
+.flex-row p{
+	background-color: black;
+	color:yellow;
+}
+
+.flex-row img{
+	border-radius:50%;
+	width:100%;
+}
+
+@media (max-width: 1200px){
+	body{
+		background-color: black;
+	}
+	#about{
+	color:red;
+	}
+	.full-screen-bg{
+		background-image:url("../images/batmanvsuperman.jpg");
+		color:red;
+	}
+	.top-nav a{
+		color:blue;
+	}
+	.flex-row{
+		flex-wrap: wrap;
+	}
+	.col-4-2-1{
+		width:48%;
+	}
+
+	.flex-row p{
+	background-color: blue;
+	color:red;
+	}
+}
+
+@media(max-width: 600px){
+	body{
+		background-color: white;
+	}
+	#about{
+	color:black;
+	}
+	.top-nav{
+		display:block;
+	}
+	.full-screen-bg{
+		background-image:url("../images/batmanlogo.png");
+		color:white;
+		font-size: 15px;
+	}
+	.top-nav a{
+		color:white;
+	}
+	.col-4-2-1{
+		width:98%;
+	}
+
+	.flex-row p{
+	background-color: white;
+	color: black;
+	}
+}
